@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Client – GeekMarket</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark.css" id="theme-link">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="module" src="js/produits.js" defer></script>
+    <script type="module" src="js/theme.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav><a href="index.html"><i class="fas fa-home"></i></a> <button id="theme-toggle"><i class="fas fa-moon"></i></button></nav>
+    </header>
+    <main class="client-space">
+        <section class="filters">
+            <input type="text" id="search" placeholder="Recherche...">
+            <select id="marchand-filter"><option>Tous Marchands</option></select>
+        </section>
+        <section class="produits-grid" id="produits-list">
+            <!-- Produits loaded via JS: <article class="produit-card">... -->
+        </section>
+    </main>
+</body>
+</html>
