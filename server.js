@@ -3,20 +3,6 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-
-
-const session = require('express-session');
-app.use(session({
-  secret: process.env.JWT_SECRET,
-  resave: false,
-  saveUninitialized: true,
-  cookie: { secure: false } // true en prod HTTPS
-}));
-app.use(passport.initialize());
-app.use(passport.session());
-
-
-
 const helmet = require('helmet');
 const { rateLimit } = require('express-rate-limit');
 const http = require('http');
